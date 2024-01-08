@@ -17,7 +17,7 @@ const ServiceSelector = ({ service, handleServiceChange }) => {
             },
           };
 
-          const response = await axios.get("http://localhost:9999/api/aws/distinct-services", config);
+          const response = await axios.get("http://172.20.100.7:9999/api/aws/distinct-services", config);
           setServiceOptions(response.data);
           setClicked(true);
         } else {
