@@ -19,7 +19,7 @@ const GcpSelector = ({ serviceDescription, handleServiceChange }) => {
           };
 
           const response = await axios.get(
-            "http://localhost:9999/api/gcp/distinctServiceDescriptions",
+            "http://172.20.100.7:9999/api/gcp/distinctServiceDescriptions",
             config
           );
           setServiceOptions(response.data);
