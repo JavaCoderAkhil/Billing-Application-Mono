@@ -1,0 +1,12 @@
+server:
+  port: 9999
+
+spring:
+  application:
+    name: BILLING-SERVICE
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: billing_reports
+      
